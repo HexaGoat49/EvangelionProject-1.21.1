@@ -9,6 +9,6 @@ scoreboard players set @s[scores={nge.stateId=1},predicate=nge:sprint] nge.state
 # Jump
 scoreboard players set @s[scores={nge.stateId=0..3},predicate=nge:jump] nge.stateId 4
 # Fall
-scoreboard players set @s[scores={nge.groundDelay=0,nge.y=..0}] nge.stateId 5
+scoreboard players set @s[scores={nge.groundDelay=0}] nge.stateId 5
 # Floor
 scoreboard players set @s[scores={nge.stateId=5,nge.groundDelay=1..}] nge.stateId 6

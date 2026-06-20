@@ -1,1 +1,4 @@
-{"values":["animated_java:eva/root/on_tick"]}
+{
+	"replace": false,
+	"values": ["animated_java:eva/root/on_tick"]
+}

@@ -1,6 +1,5 @@
 function nge:evas/ride/dismount
 
-function nge:effects
 # Ride closest chair
 execute at @s run ride @s mount @n[tag=nge.chair]
 # Get id from chair

@@ -8,7 +8,7 @@ summon item_display ~ ~ ~ {Tags:["nge.main.new","nge.copyId"]}
 summon item_display ~ ~ ~ {Tags:["nge.pointer","nge.copyId"]}
 
 # Hitbox entity data
-summon giant ~ ~ ~ {Tags:["nge.hitbox.new","nge.copyId"],Silent:1b,PersistenceRequired:1b}
+summon giant ~ ~ ~ {Tags:["nge.hitbox.new","nge.copyId"],Silent:true,PersistenceRequired:true}
 execute as @e[tag=nge.hitbox.new] at @s run function nge:effects
 attribute @e[tag=nge.hitbox.new,limit=1] minecraft:scale base set 4
 attribute @e[tag=nge.hitbox.new,limit=1] minecraft:step_height base set 8
@@ -17,7 +17,7 @@ team join noColl @e[tag=nge.hitbox.new]
 # Summon and tag AJ model
 execute rotated 0 0 run function animated_java:eva/summon {args: {}}
 execute as @e[tag=aj.global.entity,tag=!nge.eva] run function nge:evas/summon/tags
-execute as @e[tag=aj.eva.bone] run data modify entity @s height set value -60.0f
+execute as @e[tag=aj.eva.bone] run data modify entity @s height set value 60.0f
 execute as @e[tag=aj.eva.bone] run data modify entity @s view_range set value 16.0f
 # Make AJ model ride main entity
 ride @e[tag=aj.eva.root,limit=1,sort=nearest] mount @e[tag=nge.main.new,limit=1,sort=nearest]

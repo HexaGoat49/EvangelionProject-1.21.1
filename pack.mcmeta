@@ -1,13 +1,15 @@
 {
 	"pack": {
-		"pack_format": 61,
-		"description": "Evangelion datapack v0.0.0 mc1.21.4"
+		"min_format": 88,
+		"max_format": 9999999,
+		"description": "Evangelion datapack v0.0.0 mc21.1.2"
 	},
 	"overlays": {
 		"entries": [
 			{
 				"directory": "animated_java",
-				"formats": 61
+				"min_format": 106,
+				"max_format": 106
 			}
 		]
 	}

@@ -1,6 +1,6 @@
 # Executed on the pointer, at pilot position
 
-tp @s @p
+tp @s ~ ~ ~
 # Primary axis
 execute if entity @p[predicate=nge:forward] rotated ~ 0 run tp @s ^ ^ ^1
 execute if entity @p[predicate=nge:backward] rotated ~ 0 run tp @s ^ ^ ^-1

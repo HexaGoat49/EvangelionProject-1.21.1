@@ -1,14 +1,13 @@
 {
-    "condition": "minecraft:inverted",
-    "term": {
-      "condition": "minecraft:entity_properties",
-      "entity": "this",
-      "predicate": {
-        "vehicle": {
-          "type": "minecraft:item_display",
-          "nbt": "{Tags:[\"nge.chair\"]}"
-        }
+  "condition": "minecraft:inverted",
+  "term": {
+    "condition": "minecraft:entity_properties",
+    "entity": "this",
+    "predicate": {
+      "vehicle": {
+        "entity_type": "minecraft:item_display",
+        "nbt": "{Tags:[\"nge.chair\"]}"
       }
     }
   }
-  
+}

@@ -9,8 +9,5 @@ execute store result score @s nge.verRot run data get entity @s Rotation[1]
 # Get local rotation
 execute at @s as @e[tag=nge.root] if score @s nge.id = @p nge.id run function nge:evas/rotation/get_local
 
-# Set head rotation with local rotaiton
-execute at @s as @e[tag=nge.head] if score @s nge.id = @p nge.id run function nge:evas/rotation/head
-
 # Fix using main
 execute at @s as @e[tag=nge.main] if score @s nge.id = @p nge.id run function nge:evas/rotation/fix_main
